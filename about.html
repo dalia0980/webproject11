@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    
+	<link rel ="stylesheet" type="text/css" href="stylepp.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+	
+	   body{
+	       background-image: url('aboutbackground.jpg');
+           background-color: rgba(0, 0, 0, 0.6);
+           background-repeat: no-repeat;
+           background-blend-mode: multiply; 
+           background-attachment: fixed;
+	       background-size: cover;
+		}
+		
+	   .ourstory{
+	        font-family: Tahoma;
+			color: white;
+			margin-bottom: 10% ;
+			margin-top: 35% ;
+	       background-color: rgba(0, 0, 0, 0.7);
+			padding-bottom: 30%;
+		
+			
+			box-sizing: border-box;
+			text-align: center;
+	   }
+	   
+	   
+	   
+	   .ourstory p{	
+    text-align: left; 
+    position: absolute;
+    top: 87%; 
+    left: 7%; 
+    margin-right: 100px;
+	font-size: 18px;
+	position: absolute;
+    width: 50%
+	
+	   }
+	   
+	    .ourstory h3{
+    text-align: left; 
+    position: absolute;
+    top: 76%; 
+    left: 12%; 
+	
+    margin-right: 100px;
+	font-size: 23px;
+	position: absolute;
+    width: 50%
+	
+	   }
+	   
+	   #aboutus {
+	   
+	   color: white;
+	   font-size: 55px;
+	   position: absolute;
+	   left: 35%;
+	   top: 35%;
+	   
+	   }
+	   
+	   .ourstory img {
+    position: absolute;
+    top: 74%;
+    right: 10%;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+		
+		
+		
+		
+    </style>
+</head>
+
+<body>
+
+
+
+        
+         <h1 id="aboutus"> &mdash; About us &mdash; </h1>
+        <div class = "ourstory">
+		   
+          <h3> <span style="font-weight: bold;"> OUR STORY </span> </h3>
+		  <p> At <span style="font-weight: bold;"> Sapori d'Italia </span>, our story is simple: we're passionate about bringing the authentic taste of Italy to your table. Our dishes, crafted with time-honored recipes and the finest ingredients, capture the essence of Italian cuisine. From handmade pasta to savory sauces, each bite is a journey through the flavors of Italy. Join us and experience the warmth of Italian hospitality in every dish we serve.</p>
+		  <img src="aboutbackground.jpg" alt="restaurant image" />
+		  <br/>
+		  <br/>
+
+		
+			
+		  </div>
+		
+		  
+		
+		 
+		
+		
+		
+		<nav class="nav1">
+       <ul>
+          <li> <a href = "index.html" > Home </a></li>
+	      <li> <a href = "about.html" > About  </a></li>
+	      <li> <a href = "menus.html" target="_blank"> Menu </a></li>
+		  
+	   </ul>
+   </nav>
+      
+     <form class="feedback">
+	<label> Name: </label>
+		 <input type="text" name="name" id="name">
+		 <br/>
+	
+	<label> Review: </label>
+		 <input type="text" name="Review" class="rr" id="review">
+		 <br/>
+		 
+	
+		 <br/>
+		 <br/>
+	     <button type="submit" class="submitU" onclick="submitF()"> Submit </button>
+		 <br/>
+		 <br/>
+		<pre class="contact"><B>CONTACT NUM:</B> 966 58772797      |     <B> E-mail:</B> sapori.italy@gmail.com </pre>
+	
+
+
+    </form>
+
+  
+    <script>
+	
+	function submitF(){
+
+
+        var name = document.getElementById("name").value;
+	    var review = document.getElementById("review").value;
+
+	    var userReview = {
+            name: name,
+            review: review
+        };
+
+	    console.log(userReview);
+
+	    alert("Thank you for your review " + name + "<3");
+
+	} 
+    
+	</script>
+    
+</body>
+
+</html>

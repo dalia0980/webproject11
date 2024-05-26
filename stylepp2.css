@@ -1,0 +1,194 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+
+}
+body{
+	background-color: black;
+	font-family: Tohama;
+	
+	
+	
+	
+	
+	
+}
+.heading{
+	background-color: #605F4B;
+	color:white;
+	margin-bottom:30px;
+	padding:30px;
+	grid-column:1/-1;
+	text-align:center;
+	
+	
+	
+}
+.heading >h1{
+font-weight:400;
+font-size:30px;
+letter-spacing:10px;
+margin-bottom:10px;	
+		
+}
+.heading >h3{
+	font-weight:600;
+font-size:22px;
+letter-spacing:5px;
+}
+
+.menu{
+	padding:0 10px 30px 10px;
+	display: grid;
+	grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+	grid-gap:20px 40px;
+}
+.Salads-items{
+display:grid;
+position:relative;
+grid-template-rows:auto 1fr;
+border-radius:15px;	
+box-shadow: 0 0 15px rgba(0, 0, 0,0.1);
+}
+.Salads-items img{
+	position:relative;
+	width:100%;
+	border-radius: 15px 15px 0 0;
+	
+}
+h1{
+	
+grid-column:1/-1;	
+text-align:center;
+	
+}
+.details{
+	padding: 20px 10px;
+	display:grid;
+	grid-template-rows:auto 1fr 50px;
+	grid-row-gap:15px;
+	
+}
+.details-sub{
+	color: white;
+	display:grid;
+	grid-template-columns:auto auto;
+	
+	
+	
+	
+}
+.price{
+color: white;
+text-align:	right;
+font-weight:bold;
+	
+	
+	
+}
+.details>p{
+	border-bottom: 1px solid gray;
+	color: white;
+	font-size:15px;
+	line-height:28px;
+	font-weight:400;
+	align-self:stretch;
+	
+	
+	
+}
+.details>button{
+	
+	color: black;
+	font-size: 16px;
+      font-family: Tahoma;
+      text-align: center;
+      width: 180px;
+      background-color:  #c47457;
+      border: none;
+      border-radius: 5px;
+      padding: 11px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      bottom: 50px;
+	font-weight:600;
+}
+
+.details>button:hover{
+	background-color: #F9F4EA;
+}
+
+.quantity{
+	color: white;
+	background-color: black;
+	width: 35px;
+	height: 25px;
+	cursor: pointer;
+	text-align: center;
+	font-weight:60;
+	
+}
+
+header{
+	
+	font-size: 26px;
+	background-color: hsl(58, 10%, 62%);
+	color:white;
+	margin-bottom:0px;
+	padding:30px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	height: 180px;
+	grid-column:1/-1;
+	text-align:center;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	
+}
+
+
+.menu-buttons{
+	background-color: #605F4B;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+	
+	
+}
+
+.menu-buttons>button{
+	color: white;
+	background-color:   hsl(20, 49%, 40%);
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 10%;
+	font-family: Tahoma;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+      transition-duration: 0.4s;
+}
+
+
+
+.menu-buttons>button:hover{
+	background-color: #c47457;
+}
+
+main{
+	background-color: black;
+}
+
+.contact p{
+	color: white;
+	font-size: 18px;
+
+
+
+}
